@@ -63,3 +63,34 @@ chatForm.addEventListener('submit', (e)=>{
 
 // Ensure chat starts minimized
 chatBox.style.display = 'none';
+
+// Setup testimonials horizontal scrolling (right-to-left)
+(function(){
+  const section = document.querySelector('.testimonials');
+  if(!section) return;
+  const items = Array.from(section.querySelectorAll('.testimonial'));
+  if(items.length === 0) return;
+
+  // create track and move items into it
+  const track = document.createElement('div');
+  track.className = 'testimonial-track';
+  items.forEach(it => track.appendChild(it));
+
+  // insert track after the heading inside section
+  const heading = section.querySelector('h3');
+  if(heading) heading.parentNode.insertBefore(track, heading.nextSibling);
+  else section.appendChild(track);
+
+  // clone items to create seamless loop
+  items.forEach(it => track.appendChild(it.cloneNode(true)));
+
+  // compute width and set animation vars
+  requestAnimationFrame(()=>{
+    const total = track.scrollWidth;
+    const single = total / 2 || total;
+    track.style.setProperty('--scroll-end', `-${single}px`);
+    const speed = 60; // px per second
+    const duration = Math.max(12, Math.round(single / speed));
+    track.style.setProperty('--scroll-duration', `${duration}s`);
+  });
+})();
