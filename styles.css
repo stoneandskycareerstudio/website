@@ -26,7 +26,7 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 }
 
 .site-header .container{display:flex; align-items:center; justify-content:space-between; padding:0}
-.logo{height:220px; width:auto; max-width:420px; object-fit:contain; display:block; background:transparent; border:0; padding:0;}
+.logo{height:250px; width:auto; max-width:420px; object-fit:contain; display:block; background:transparent; border:0; padding:0;}
 .logo-text{margin-left:12px; display:flex; flex-direction:column; align-items:center}
 .logo-text .logo-name{font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif; font-size:2.6rem; font-weight:700; line-height:1; display:block; text-align:center}
 .logo-text .logo-stone{color:var(--stone-dark)}
