@@ -161,6 +161,6 @@ nav a.cta{background:var(--accent); color:var(--white); padding:8px 12px; border
 .footer-cols{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:flex-start; width:100%}
 .footer-col{text-align:left; min-width:0; overflow:hidden}
 
-@media (max-width:768px){
+@media (max-width:600px){
   .footer-cols{grid-template-columns:1fr}
 }
