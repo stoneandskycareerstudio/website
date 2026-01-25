@@ -61,7 +61,7 @@ nav a.cta{background:var(--accent); color:var(--white); padding:8px 12px; border
 .card img{width:100%; height:160px; object-fit:cover; border-radius:8px; display:block; margin-bottom:12px}
 .booking{display:block}
 .booking-content{display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap}
-.booking-img{width:160px; height:160px; object-fit:cover; border-radius:10px; flex:0 0 160px}
+.booking-img{width:260px; height:160px; object-fit:scale-down; border-radius:10px; flex:0 0 160px}
 .booking-info{flex:1}
 .booking-name{margin:0 0 4px 0; font-size:16px; font-weight:700; line-height:1.3}
 .booking-title{margin:0 0 8px 0; font-size:14px; color:#666; font-weight:500; line-height:1.4}

@@ -7,6 +7,9 @@
   <meta name="description" content="Personalized career counseling for students and professionals — national and international admissions, test prep, workshops, and mentorship." />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0d1b2a">
 </head>
 <body>
   <header class="site-header">
@@ -52,7 +55,7 @@
     </section>
 
     <section id="offerings" class="container offerings">
-      <h3>Our Services</h3>
+      <h2>Our Services</h2>
       <div class="grid">
         <article class="card">
           <img src="assets/service1.jpg" alt="Under Graduation in India">
@@ -110,6 +113,9 @@
         <img src="assets/testimonial3.jpg" alt="Julian S">
         <blockquote>"I discovered career areas I never knew about through their aptitude test and follow-up coaching." <cite>— Julian S., Graduate</cite></blockquote>
       </div>
+      </div>
+        <a href="registeration.html"><h4>Give your testimony</h4></a>
+      </div>
     </section>
     <!--
     <section id="events" class="container events">
@@ -126,7 +132,7 @@
     <section id="booking" class="container booking">
       <h3>Book a Counselling Session</h3>
       <div class="booking-content">
-        <img src="assets/advisor.avif" alt="Advisor" class="booking-img">   
+        <img src="assets/advisor.jpg" alt="Advisor" class="booking-img">   
         <div class="booking-info">
           <h4 class="booking-name">SAHANA SURESH,</h4>
           <p class="booking-title">Principal Counsellor, Miami, USA.</p>
@@ -221,8 +227,8 @@
             Landmark: Near Uthandi Tollgate,<br>
             KANNATHUR, ECR, <br>
             CHENNAI 603112,<br>
-            Tamil Nadu, <br>
-            India.<br>
+            TAMIL NADU, <br>
+            INDIA.<br>
           </address>
         </div>
       </div>
@@ -245,5 +251,12 @@
   </div>
 
   <script src="script.js"></script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js");
+  }
+</script>
+
 </body>
 </html>
